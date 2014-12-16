@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+div {display:inline}
+</style>
+
+<script>
+function reLoadIframe()
+{
+  document.getElementById('viewer').contentWindow.location.reload();
+}
+</script>
+
+<title>Welcome to your Modded TXP-MC Server Admin CPanel!</title>
+<font size="2" face="arial, helvetica" color="silver">
+
+
+<center>
+
+<h1>Welcome to <b>your</b> TXP-MC Modded Server Admin CPanel!</h1>
+<br/>
+<h3>Version: Beta 0.0.051 ALPHA_MOD</h3>
+
+</head>
+<body>
+
+<br/><br/>
+
+<div id="nav" style="float:left">
+
+<h4>Options</h4>
+<ul>
+  <li><a href="index.php" target="viewer">Quick Galnce - Index</a></li>
+  <li><a href="banip.php3" target="viewer">Ban IPs</a></li>
+  <li><a href="banplayer.php3" target="viewer">Ban Players</a></li>
+  <li><a href="logviewer.html" target="viewer">View Server Logs</a></li>
+  <li><a href="op.php3" target="viewer">Manage OPs</a></li>
+  <li><a href="properties.php3" target="viewer">Edit Server Properties <br/>
+(Turn off server first!)</a></li>
+  <li><a href="whitelist.php3" target="viewer">Manage White List</a></li>
+  <li><a href="worldsmanager.html" target="viewer">Manage Worlds</a></li>
+  <li><a href="modsmanager.html" target="viewer"><b>NEW:</b>Manage Forge Mods! <br/> (Turn off server first!)</a></li>
+  
+</ul>
+
+<br/><br/>
+
+<input type="button" value="refresh current page" onclick="reLoadIframe();">
+
+</div>
+
+<center>
+<div id="panelviewer">
+
+<iframe name="viewer" id="viewer" src="index.php" width="900" height="500">
+<p>Sorry; this CPanel will not work properly without HTML5 iframe & CSS4 align support.</p>
+</iframe>
+
+</div>
+</center>
+
+<br/>
+
+</body>
+<footer>
+
+<h5>TXP-MC Admin is a Php 5.4 based server-administrator tool that is meant to decrease the difficulty of managing, editing, and hosting a Minecraft server (.jar executable format only). This version of the CPanel is now designed to support Vanilla Minecraft 1.6.4 - 1.7.10 and Minecraft Forge multiplayer server mods only. For more info, contact me at: Admin@TxpNetworkPortal.elementfx.com. For possible future updates, contact me at: TopHatProductions115@gmail.com. Have Fun, and happy modding!</h5>
+
+</center>
+</footer>
+
+</html>

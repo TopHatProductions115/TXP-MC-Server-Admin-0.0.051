@@ -1,0 +1,18 @@
+FINAL VERSION
+
+Welcome to your new Minecraft Server control panel, produced by the TXP-Network. This app is currently in A-04 stage of development (Alpha-Development - Complete). Therefore, this alpha version is the intended final product. This control panel is made to supplement the default server software provided by Mojang (at minecraft.net) and Minecraft Forge-based servers only. Therefore, you will need to have a server already available for testing. In order for your copy of TXP-MC Server Admin to work correctly, please place all server files into the folder "/server/", enable PHP 5.4 and higher, use a modern browser to access the CPanel ("cpanel.html"). It is also required that you rename the server jar to "minecraft_server". This also CPanel requires that your Minecraft server will be running somewhere on an HTTP/HTTPS webserver (online location/website/local web server), with (optional) access to a standard JVM (preferably, Linux). This software comes with no warranty of any type (not even implied). Please use with caution.
+
+NOTE: If you can convert the .jar file to a working, independent, executable binary, do so. That removes a step from installation, and a requirement from your runtime: JRE/JVM/Java installation...
+
+JRE/JVM Download:
+http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+
+For information on all various (indirect) contributors to this project:
+-http://stackoverflow.com/questions/13350268/start-and-stop-minecraft-java-process-via-php
+-http://stackoverflow.com/questions/8889025/unzip-a-file-with-php
+-https://github.com/NoxNebula/Minecraft-Server-Status
+-http://www.phpclasses.org/package/204-PHP-This-class-allows-one-to-read-and-modify-files-using-the-INI-file-format-.html#download
+-http://www.minecraftforum.net/topic/1806131-suggestion-a-much-improved-server-properties-file-format/
+-http://files.minecraftforge.net/
+
+Copyright © 2014-2015, TXP-MC World Series, TXP-Network Software Dev & TXP Technologies. All Rights Reserved.

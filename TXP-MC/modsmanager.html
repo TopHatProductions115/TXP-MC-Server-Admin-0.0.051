@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>TXP-MC Admin - Server Mods Upload</title>
+<font size="2" face="arial, helvetica" color="silver">
+
+
+<center>
+
+<h1>Server Mods Manager</h1>
+
+</head>
+<body>
+
+<h3>To upload new mods to the server (make sure that the server is <b>OFFLINE</b> first), simply select the mod's ".zip" archive from your system file selection window and click OK. For future reference, the mod must be compatible with multiplayer, and it is prefered that you notify the mod author in advance before using the mod. Click submit when you're ready...</h3>
+
+<br/>
+<h3><b>Current Mods Uploaded:</b></h3>
+<br/>
+<iframe name="viewer" id="viewer" src="/TXP-MC/mods/portal.php" width="660" height="460"></iframe>
+<br/>
+
+<legend>Upload New Map</legend>
+
+<br/>
+<form action="modsupload.php" method="post" enctype="multipart/form-data">
+<label for="file">Filename:</label>
+<input type="file" name="file" id="file"><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+
+<br/>
+
+<legend>Delete Mod</legend>
+
+<br/>
+<form action="deletemod.php" method="post" name="edit" id="edit">
+Mod name (case-sensitive): <input type="text" name="mod"><br>
+<input type="submit" value="delete">
+</form>
+
+<br/>
+
+</body>
+
+</center>
+
+</html>

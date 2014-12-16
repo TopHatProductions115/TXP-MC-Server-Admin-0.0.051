@@ -1,0 +1,6 @@
+NOTE: The Minecraft Forge installers' locations are listed here for those who wish to mod their server(s). Please install the Minecraft Forge server to the /server/ folder, and make sure to use versions 1.5.2 - 1.8.0. The CPanel's design can only operate with the newer server software, and is not backward-compatible. The CPanel itself may also require some modification to work with the modded server's logs and mod tracking. For info on various mods you can test, go to MinecraftForum.net. Good Luck...
+
+Directories (as usual):
+
+http://files.minecraftforge.net/
+http://files.minecraftforge.net/minecraftforge/index_legacy.html

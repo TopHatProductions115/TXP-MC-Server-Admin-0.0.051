@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script>
+function reloadsrv()
+{
+  document.getElementById('srvrviewer').contentWindow.location.reload();
+}
+
+function reloadfml()
+{
+  document.getElementById('forgemainviewer').contentWindow.location.reload();
+}
+
+function reloadjunk()
+{
+  document.getElementById('forgejunkviewer').contentWindow.location.reload();
+}
+</script>
+
+<title>TXP-MC Admin - Server Activity</title>
+<font size="2" face="arial, helvetica" color="silver">
+
+
+<center>
+
+<h1>Server Activity Log</h1>
+
+</head>
+<body>
+
+<h3>This part of the control panel displays the <b>all</b> Minecraft Server logs that are generated while your server runs...</h3>
+
+<br/>
+<h3><b>Recent Activity:</b></h3>
+<br/>
+<iframe id="srvrviewer" src="/TXP-MC/server/logs/latest.log" width="660" height="240"></iframe>
+<br/>
+<input type="button" value="refresh current page" onclick="reloadsrv();">
+<br/>
+<br/>
+<iframe id="forgemainviewer" src="/TXP-MC/server/logs/fml-server-latest.log" width="660" height="230"></iframe>
+<br/>
+<input type="button" value="refresh current page" onclick="reloadfml();">
+<br/>
+<br/>
+<iframe id="forgejunkviewer" src="/TXP-MC/server/logs/fml-junk-earlystartup.log" width="660" height="230"></iframe>
+<br/>
+<input type="button" value="refresh current page" onclick="reloadjunk();">
+<br/>
+
+</body>
+
+</center>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>TXP-MC Admin - Server Worlds Upload</title>
+<font size="2" face="arial, helvetica" color="silver">
+
+
+<center>
+
+<h1>Server Worlds Manager</h1>
+
+</head>
+<body>
+
+<h3>To upload new worlds to the server, simply compress them to a zip archive; but use care when doing so. Make sure that the world isn't in a nested folder, and is in only one folder (some Operating Systems place the archive in another folder when items are sent to a zip archive). Click submit when you're ready...</h3>
+
+<br/>
+<h3><b>Current Worlds Uploaded:</b></h3>
+<br/>
+<iframe name="viewer" id="viewer" src="/TXP-MC/worlds/portal.php" width="660" height="460"></iframe>
+<br/>
+
+<legend>Upload New Map</legend>
+
+<br/>
+<form action="worldsupload.php" method="post" enctype="multipart/form-data">
+<label for="file">Filename:</label>
+<input type="file" name="file" id="file"><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+
+<br/>
+
+<legend>Destroy Map</legend>
+
+<br/>
+<form action="deleteworld.php" method="post" name="edit" id="edit">
+World name (case-sensitive): <input type="text" name="world"><br>
+<input type="submit" value="You Monster!">
+</form>
+
+<br/>
+
+</body>
+
+</center>
+
+</html>
